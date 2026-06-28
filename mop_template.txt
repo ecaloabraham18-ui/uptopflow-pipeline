@@ -1,0 +1,184 @@
+You are a technical documentation specialist for mission-critical data center facilities. Generate a complete Method of Procedure (MOP) using the information below.
+
+TASK: {task_name}
+EQUIPMENT: {equipment_name}
+SYSTEM: {system_type}
+FACILITY: {facility_name}
+DATE: {date}
+
+Format exactly as follows:
+
+---
+MOP TITLE: {task_name} — {equipment_name}
+MOP NUMBER: MOP-{system_type}-001
+SYSTEM: {system_type}
+REVISION DATE: {date}
+WRITTEN BY: UpTopFlow LLC
+
+APPROVAL AND SIGN-OFF:
+No step in this procedure may begin until all required signatures below are obtained and this document is formally authorized.
+
+| Role                  | Name | Signature | Date |
+|-----------------------|------|-----------|------|
+| Prepared By           |      |           |      |
+| Technically Reviewed  |      |           |      |
+| Safety Reviewed       |      |           |      |
+| Approved By           |      |           |      |
+| Authorized By         |      |           |      |
+
+ACTIVITY SUMMARY:
+Project / Activity Name: {task_name} — {equipment_name}
+Facility: {facility_name}
+Planned Date: {date}
+Estimated Start Time: _______________
+Estimated Completion Time: _______________
+Actual Start Time: _______________
+Actual Completion Time: _______________
+Scope of Work: [One paragraph summary of exactly what this MOP covers and what systems are affected]
+Participating Parties: [All teams, vendors, and roles involved in this activity]
+Key Risks: [Top 3 risks associated with this activity]
+Mitigation: [How each risk is controlled before and during execution]
+Contingency Plan: [What happens if execution must be aborted mid-procedure]
+
+PURPOSE:
+[One sentence explaining what this procedure accomplishes]
+
+SCOPE:
+[Which equipment and systems this covers — use exact equipment names from the source data]
+
+PREREQUISITES:
+[Everything that must be confirmed true before any step of this procedure begins — number each prerequisite]
+
+REQUIRED PPE:
+[Personal protective equipment required for each work area — be specific to voltage class and arc flash rating]
+
+SAFETY WARNINGS:
+[Every safety hazard in bold. Include arc flash, LOTO requirements, energized equipment warnings, battery hazards, hydrogen gas, single-fed equipment risks, and unauthorized re-energization warnings. Use exact equipment names.]
+
+ESTIMATED DURATION:
+[Total estimated time. Include a breakdown by phase where applicable.]
+
+REQUIRED PERSONNEL:
+
+| Role | Assigned Person | Contact | Minimum Qualification |
+|------|----------------|---------|----------------------|
+| [Role 1] | _______________ | _______________ | [Qualification] |
+| [Role 2] | _______________ | _______________ | [Qualification] |
+| [Role 3] | _______________ | _______________ | [Qualification] |
+| [Role 4] | _______________ | _______________ | [Qualification] |
+
+Note: All roles must be filled and all personnel must be in radio communication before the first step is executed.
+
+ONE-LINE DIAGRAM:
+[INSERT ONE-LINE DIAGRAM HERE — obtain from facility engineering drawings showing upstream source, switchboard, MDP panels, UPS systems, WAB panels, PDU relationships, and affected loads. Diagram must be inserted and verified against as-built conditions before procedure execution.]
+
+STEP BY STEP PROCEDURE:
+
+Rules for every step:
+- Number every step sequentially across all phases
+- One discrete action per step — never combine two actions in one step
+- Use exact equipment names from the source data
+- Add a VERIFY CHECKPOINT after every load transfer, every voltage verification, every LOTO application or removal, every equipment restoration, and every system status confirmation — not just every 5 steps
+- Flag every irreversible action with POINT OF NO RETURN before the step
+- Every VERIFY CHECKPOINT must state the specific reading or condition that must be confirmed before proceeding
+- Add photo placeholders using format: [PHOTO REQUIRED: description of what photo should show]
+
+[Generate all phases and steps here using the technical data provided]
+
+EXPECTED OUTCOME:
+[Exact system state after successful completion — list every piece of in-scope equipment and its confirmed operational status]
+
+IF SOMETHING GOES WRONG:
+[Numbered abort steps in exact sequence. Who to call and when. What state to leave equipment in if execution is halted mid-procedure.]
+
+ESCALATION CONTACTS:
+Primary: _______________
+Backup: _______________
+Facility Engineer: _______________
+Vendor Lead: _______________
+
+---
+
+APPENDIX A — PRE-ACTIVITY INFRASTRUCTURE VERIFICATION CHECKLIST
+Complete before any step of the procedure begins. All items must be confirmed before authorization is given to proceed.
+
+| Equipment | Pre-Activity Condition | Verified By | Time |
+|-----------|----------------------|-------------|------|
+| [Equipment 1] | _______________ | _______________ | ___ |
+| [Equipment 2] | _______________ | _______________ | ___ |
+| [Equipment 3] | _______________ | _______________ | ___ |
+[Generate one row per piece of in-scope equipment from the source data]
+
+---
+
+APPENDIX B — LOTO CHECKLIST
+Document every lockout/tagout application and removal. No LOTO device may be removed without authorization from the responsible team lead.
+
+LOTO APPLICATION LOG:
+| Isolation Point | Applied By | Lock/Tag Number | Time Applied |
+|----------------|-----------|-----------------|-------------|
+| _______________ | _______________ | _______________ | ___________ |
+| _______________ | _______________ | _______________ | ___________ |
+| _______________ | _______________ | _______________ | ___________ |
+
+LOTO REMOVAL LOG:
+| Isolation Point | Removed By | Authorized By | Time Removed |
+|----------------|-----------|---------------|-------------|
+| _______________ | _______________ | _______________ | ___________ |
+| _______________ | _______________ | _______________ | ___________ |
+| _______________ | _______________ | _______________ | ___________ |
+
+---
+
+APPENDIX C — VOLTAGE VERIFICATION CHECKLIST
+All voltage readings must be taken with a calibrated digital multimeter. Both the technician and a second verifier must sign each reading.
+
+| Equipment / Location | Expected Reading | Actual Reading | Technician | Verifier | Time |
+|---------------------|-----------------|---------------|-----------|---------|------|
+| _______________ | 0V / [expected voltage] | _______________ | ___ | ___ | ___ |
+| _______________ | 0V / [expected voltage] | _______________ | ___ | ___ | ___ |
+| _______________ | 0V / [expected voltage] | _______________ | ___ | ___ | ___ |
+[Generate one row per voltage verification point from the source data]
+
+---
+
+APPENDIX D — POST-ACTIVITY CLOSE-OUT CHECKLIST
+Complete after all steps are finished and before the activity is declared closed.
+
+□ All in-scope equipment restored to normal energized operation — Confirmed by: _______________
+□ All monitoring systems show normal readings with no active alarms — Confirmed by: _______________
+□ All tools and test equipment removed from all work areas — Confirmed by: _______________
+□ All enclosure doors closed and secured — Confirmed by: _______________
+□ All LOTO devices removed and accounted for — Confirmed by: _______________
+□ All maintenance records signed and collected — Confirmed by: _______________
+□ Client notification sent confirming activity complete — Sent by: _______________
+□ Activity log closed with final completion time recorded — Closed by: _______________
+□ All punch list items or findings documented and escalated — Confirmed by: _______________
+
+Final Close-Out Sign-Off:
+Activity declared complete by: _____________ Title: _____________ Date: _______ Time: _______
+
+---
+
+APPENDIX E — RISK ASSESSMENT
+
+| Risk | Likelihood | Impact | Mitigation | Owner |
+|------|-----------|--------|-----------|-------|
+| [Risk 1] | High/Med/Low | High/Med/Low | [Mitigation] | ___ |
+| [Risk 2] | High/Med/Low | High/Med/Low | [Mitigation] | ___ |
+| [Risk 3] | High/Med/Low | High/Med/Low | [Mitigation] | ___ |
+[Generate risks specific to this procedure and equipment from the source data]
+
+---
+
+Rules for writing this MOP:
+- Use exact equipment names, breaker labels, panel designations, and room locations from the source data
+- Every VERIFY CHECKPOINT must name the specific reading or condition and who confirms it
+- Every POINT OF NO RETURN must explain what cannot be undone and what must be confirmed before proceeding
+- Safety always wins over speed — if in doubt the default action is always stop and escalate
+- Write for the technician executing under pressure, not the engineer who designed the system
+- Photo placeholders must be inserted for every piece of equipment that will be physically operated or touched
+- Never use vague language — always specify exactly what to do, what to look at, and what confirms success
+
+Use this technical data to make the procedure specific and accurate:
+{commissioning_summary}

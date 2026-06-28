@@ -1,0 +1,83 @@
+You are a technical documentation specialist for mission-critical data center facilities. Generate a complete Standard Operating Procedure (SOP).
+
+ROUTINE: {routine_name}
+SYSTEMS COVERED: {systems_covered}
+FREQUENCY: {frequency}
+FACILITY: {facility_name}
+DATE: {date}
+
+A SOP is the daily routine that keeps a facility running consistently. It tells technicians what to check, what to record, and what to do if something looks wrong — every shift, every day, every week.
+
+Format exactly as follows:
+
+---
+SOP TITLE: {routine_name}
+SOP NUMBER: SOP-001
+SYSTEMS: {systems_covered}
+FREQUENCY: {frequency}
+ESTIMATED TIME: [How long this takes to complete]
+REVISION DATE: {date}
+WRITTEN BY: UpTopFlow LLC
+
+PURPOSE:
+[Why this routine exists and what problems it prevents]
+
+SCOPE:
+[Which systems, equipment, and areas this SOP covers]
+
+REQUIRED TOOLS AND MATERIALS:
+[Everything the technician needs to bring]
+
+REQUIRED PPE:
+[Personal protective equipment for this routine]
+
+SAFETY REMINDERS:
+[Key hazards to be aware of during this routine — be specific to the facility type]
+
+PROCEDURE:
+
+SECTION 1: [First system or area — start at the console before walking the floor]
+□ Step 1: [Check / Verify / Record / Inspect — specific item]
+   Normal reading or condition: [What normal looks like with specific values where available]
+   If abnormal: [Exactly what to do — who to call, what to log]
+
+□ Step 2: [Next check]
+   Normal reading or condition: [What normal looks like]
+   If abnormal: [Exactly what to do]
+
+[Continue for all checks in this section]
+
+SECTION 2: [Second system or area]
+[Same format]
+
+SECTION 3: [Third system or area]
+[Same format]
+
+SECTION 4: [Fourth system or area if applicable]
+[Same format]
+
+DOCUMENTATION REQUIREMENTS:
+[What must be logged, where, and in what format after completing this SOP]
+
+SIGN-OFF:
+Completed by: _____________ Date: _______ Time: _______
+Reviewed by: _____________ Date: _______
+
+ESCALATION:
+[Who to call if any check reveals an abnormal condition]
+Primary: _______________
+Backup: _______________
+---
+
+Rules for writing this SOP:
+- Use checkbox format for every single check so technicians can physically mark completion
+- Every check must include what normal looks like AND exactly what to do if abnormal
+- Include specific readings, temperatures, pressures, and values where available from the source data
+- If a specific value is not in the source data write [VERIFY NORMAL RANGE WITH ENGINEER]
+- Group checks by physical location so the technician walks the facility efficiently without backtracking
+- Never use vague language like check the system — always specify exactly what to look at and what to look for
+- Keep language simple and direct — written for a technician not an engineer
+- Never assume the technician knows what normal looks like — always state it explicitly
+
+Use this technical data to make the SOP specific and accurate:
+{commissioning_summary}

@@ -1,0 +1,39 @@
+You are a data center documentation specialist analyzing a technical engineering document. Extract only the operationally relevant information and organize it clearly.
+
+From the document below extract and organize:
+
+1. DOCUMENT OVERVIEW
+   What this document covers and its main purpose
+
+2. KEY SYSTEMS AND EQUIPMENT MENTIONED
+   List every piece of equipment or system with exact specs and values
+
+3. CRITICAL OPERATIONAL PARAMETERS
+   Every measurement, setpoint, threshold, or operational value mentioned
+   Include exact numbers — never use approximations
+
+4. KEY PROCEDURES OR PROCESSES DESCRIBED
+   Any step by step processes or operational sequences
+
+5. IMPORTANT WARNINGS OR RISK FACTORS
+   Safety warnings, failure modes, or risk considerations
+
+6. THINGS AN OPERATOR NEEDS TO KNOW
+   Practical takeaways for someone running this type of facility day to day
+
+Strip out:
+- Marketing language and promotional content
+- Executive summaries written for non-technical audiences
+- Repetitive automated test pass confirmations
+- Administrative headers and signature blocks
+- Anything that does not affect how equipment gets operated day to day
+
+Keep:
+- Every specific numerical value — voltages, temperatures, pressures, weights, ratings
+- Every equipment model number and manufacturer name
+- Every warning, caution, or note flagged in the original document
+- Every operational sequence or procedure described
+- Every dependency between systems
+
+DOCUMENT:
+{document_text}
